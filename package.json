@@ -28,7 +28,9 @@
     "gulp-ttf2woff2": "latest",
     "gulp-webp": "latest",
     "gulp-zip": "latest",
+    "jquery": "^3.6.3",
     "sass": "latest",
+    "slick-carousel": "^1.8.1",
     "webpack": "latest",
     "webpack-stream": "latest"
   }
