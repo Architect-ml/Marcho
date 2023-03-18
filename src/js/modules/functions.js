@@ -12,3 +12,16 @@ export const slickSlider = () => {
 // Fancy box
 Fancybox.bind("[data-fancybox]", {
 });
+
+// Rate Yo!
+$(function () {
+
+  $(".star").rateYo({
+    starWidth: "17px",
+    normalFill: "#cccccc",
+    ratedFill: "#ffc35b",
+    readOnly: true
+  });
+
+});
+
