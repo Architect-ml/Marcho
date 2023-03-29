@@ -763,7 +763,7 @@
   padding-top: 100px;
   margin: 0 auto 115px;
 
-  &_links {
+  &__links {
     margin-bottom: 40px;
     text-align: center;
   }
@@ -807,5 +807,9 @@
     margin-top: 12px;
     display: inline-block;
     color: $accent;
+  }
+
+  &__text {
+    margin-bottom: 25px;
   }
 }
