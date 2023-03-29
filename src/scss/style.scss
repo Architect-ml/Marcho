@@ -813,3 +813,39 @@
     margin-bottom: 25px;
   }
 }
+
+.page-404 {
+  padding: 110px 0 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 570px
+  }
+
+  &__title {
+    @extend %roboto-700;
+    margin-bottom: 40px;
+    font-size: 48px;
+    color: #28384f;
+  }
+
+  &__text {
+    max-width: 470px;
+    margin-bottom: 55px;
+  }
+
+  &__link {
+    @extend %roboto-400;
+    padding: 14px 35px;
+    background-color: $accent;
+    box-shadow: 0 5px 25px rgba(254, 62, 87, 0.35);
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
