@@ -13,9 +13,40 @@ export const slickSlider = () => {
 Fancybox.bind("[data-fancybox]", {
 });
 
-// Rate Yo!
-$(function () {
 
+$(function () {
+  $('.shop-content__filter-btn').on('click', function () {
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+    $(this).addClass('shop-content__filter-btn--active');
+  });
+
+  $('.button-list').on('click', function () {
+    $('.product-item').addClass('product-item--list')
+  });
+
+  $('.button-grid').on('click', function () {
+    $('.product-item').removeClass('product-item--list')
+  });
+
+  //Form Styler
+  $('.select-style').styler();
+
+
+  // ion-rangeslider
+  $('.filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+  });
+
+  // Rate Yo!
   $(".star").rateYo({
     starWidth: "17px",
     normalFill: "#cccccc",
@@ -69,4 +100,6 @@ function initializeClock(id, endtime) {
 
 const deadline = $('.promo__clock').attr('data-time');
 initializeClock('promo__clock', deadline);
+
+
 
